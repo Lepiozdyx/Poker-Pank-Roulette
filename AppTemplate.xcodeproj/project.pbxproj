@@ -312,8 +312,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Poker Pank Roulette";
-				INFOPLIST_KEY_NSCameraUsageDescription = "The app uses your camera so you can take a new profile photo.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app accesses your photo library so you can choose an existing photo for your profile.";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your permission helps us measure which advertising campaigns led to app installs and evaluate marketing performance.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,8 +347,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Poker Pank Roulette";
-				INFOPLIST_KEY_NSCameraUsageDescription = "The app uses your camera so you can take a new profile photo.";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "The app accesses your photo library so you can choose an existing photo for your profile.";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Your permission helps us measure which advertising campaigns led to app installs and evaluate marketing performance.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
