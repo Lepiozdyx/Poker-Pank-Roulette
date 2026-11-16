@@ -71,13 +71,14 @@ struct SettingsView: View {
                 Text(tr("Finish a tournament to unlock Magenta. Win the circuit to unlock Gold."))
                     .font(.caption).foregroundStyle(Neon.muted)
                 SectionHeading(title: "Local data")
-                Text(tr("Progress stays on this iPhone. No account, network connection or real money is involved."))
+                Text(tr("Game progress and preferences are saved on this iPhone."))
                     .font(.subheadline).foregroundStyle(Neon.muted)
                 if store.loadBlocked {
                     Button(tr("Retry loading save")) { store.retryLoad() }.buttonStyle(NeonButtonStyle(primary: false))
                 }
                 Button(tr("Reset local data"), role: .destructive) { confirmReset = true }
                     .buttonStyle(NeonButtonStyle(primary: false, tint: Neon.pink)).accessibilityIdentifier("resetLocalData")
+                LegalSettingsSection()
             }.padding(24)
         }.background(Neon.background)
             .alert(tr("Reset everything?"), isPresented: $confirmReset) {
