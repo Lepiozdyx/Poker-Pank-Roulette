@@ -17,7 +17,7 @@ enum LaunchRoute {
 @Observable
 final class LaunchCoordinator {
     private(set) var route: LaunchRoute = .loading
-    private(set) var scenePhase: ScenePhase = .background
+    private(set) var scenePhase: ScenePhase = .inactive
 
     private let attribution = AppsFlyerService()
     private let webRouteResolver = WebRouteResolver()

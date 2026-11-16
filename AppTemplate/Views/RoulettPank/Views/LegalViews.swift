@@ -15,19 +15,6 @@ struct LegalSettingsSection: View {
     }
 }
 
-struct WebLegalSettingsView: View {
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 24) {
-                SheetHeader(title: "Settings")
-                LegalSettingsSection()
-            }
-            .padding(24)
-        }
-        .background(Neon.background)
-    }
-}
-
 private enum LegalDocument: String, Identifiable {
     case terms, privacy
 

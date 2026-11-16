@@ -2,7 +2,6 @@ import SwiftUI
 
 struct LaunchView: View {
     let launch: LaunchCoordinator
-    @State private var showsWebSettings = false
 
     var body: some View {
         switch launch.route {
@@ -13,17 +12,6 @@ struct LaunchView: View {
                 .environment(\.scenePhase, launch.scenePhase)
         case .web(let url):
             WebView(url: url)
-                .safeAreaInset(edge: .top, spacing: 0) {
-                    HStack {
-                        Spacer()
-                        SmallIconButton(icon: "slider.horizontal.3", label: "Settings") {
-                            showsWebSettings = true
-                        }
-                    }
-                    .padding(.horizontal, 12)
-                    .background(Neon.background)
-                }
-                .sheet(isPresented: $showsWebSettings) { WebLegalSettingsView().gameSheet() }
         }
     }
 }
